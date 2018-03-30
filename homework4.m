@@ -6,12 +6,18 @@
 function homework4
 % 1. Apply circular-shift by (10,10) on the FFT of the filter, then apply inverse-FFT.
 
-filter = FilterGenerator(256, 10, 1);
-filterFFT = fft2(filter);
-filterCS = CircularShift(filterFFT, 10, 10);
-imagesc(real(filterCS));
-colormap(gray(256));
-
+for radius = 10:20:50
+    for type = 1:3
+    filter = FilterGenerator(256, radius, type);
+    filterFFT = fft2(filter);
+    for shift = 10:20:50
+        filterCS = CircularShift(filterFFT, shift, shift);
+        imagesc(real(filterCS));
+        colormap(gray(256));
+        pause;
+    end
+    end
+end
 
 % whiteGaussian = randn(256);
 % whiteGaussianFFT = fft2(whiteGaussian);
