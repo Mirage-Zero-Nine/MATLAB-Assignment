@@ -5,6 +5,7 @@
 
 function homework4
 % 1. Apply circular-shift by (10,10) on the FFT of the filter, then apply inverse-FFT.
+% 2. Repeat the experiment in Part 1 for different amount of shift.
 
 for radius = 10:20:50
     for type = 1:3

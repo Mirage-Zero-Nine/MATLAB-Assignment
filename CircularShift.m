@@ -5,7 +5,6 @@
 % Circular shift
 function g = CircularShift(inputImage, rowShift, circularShift)
 
-% First row
 rowLength = length(inputImage(:,1));
 
 for m = 1:rowLength

@@ -20,9 +20,9 @@ for m = 1:N
 
         switch type
         case 1
-            dist = sqrt(m1 ^ 2 + n1 ^ 2);
+            dist = sqrt(m1^2 + n1^2);
         case 2
-            dist = abs(m1)+abs(n1);
+            dist = abs(m1) + abs(n1);
         case 3
             dist = max(abs(m1), abs(n1));
         end
