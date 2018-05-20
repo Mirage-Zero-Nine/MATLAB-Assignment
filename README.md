@@ -1,2 +1,0 @@
-# MATLAB-Assignment
-Image synthesis

@@ -1,7 +1,3 @@
-% Create Date: 2018-01-30
-% Name: Yueyang Zhou
-% All varibles are in camelCase style.
-
 function Test
 
 clear
